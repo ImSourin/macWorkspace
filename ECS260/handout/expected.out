@@ -1,0 +1,1374 @@
+Instrumenting Code------------------------------------------
+Test: tests/test1.c
+
+Test: tests/test10.c
+
+tests/test100.c:3:84: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %u", arr[1][-1]); return 0;}
+                                                                                   ^      ~~
+tests/test100.c:3:14: note: array 'arr' declared here
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %u", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test100.c
+
+tests/test101.c:3:77: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %ld", arr[1][-1]); return 0;}
+                                                                            ^      ~~
+tests/test101.c:3:14: note: array 'arr' declared here
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %ld", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test101.c
+
+tests/test102.c:3:86: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %lu", arr[1][-1]); return 0;}
+                                                                                     ^      ~~
+tests/test102.c:3:14: note: array 'arr' declared here
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %lu", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test102.c
+
+tests/test103.c:3:78: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %hd", arr[1][-1]); return 0;}
+                                                                             ^      ~~
+tests/test103.c:3:14: note: array 'arr' declared here
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %hd", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test103.c
+
+tests/test104.c:3:87: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %hu", arr[1][-1]); return 0;}
+                                                                                      ^      ~~
+tests/test104.c:3:14: note: array 'arr' declared here
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %hu", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test104.c
+
+tests/test105.c:3:83: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %c", arr[1][-1]); return 0;}
+                                                                                  ^      ~~
+tests/test105.c:3:14: note: array 'arr' declared here
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %c", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test105.c
+
+tests/test106.c:3:76: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %c", arr[1][-1]); return 0;}
+                                                                           ^      ~~
+tests/test106.c:3:14: note: array 'arr' declared here
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %c", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test106.c
+
+tests/test107.c:3:86: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %c", arr[1][-1]); return 0;}
+                                                                                     ^      ~~
+tests/test107.c:3:14: note: array 'arr' declared here
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %c", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test107.c
+
+tests/test108.c:3:83: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %lld", arr[1][-1]); return 0;}
+                                                                                  ^      ~~
+tests/test108.c:3:14: note: array 'arr' declared here
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %lld", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test108.c
+
+tests/test109.c:3:77: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %f", arr[1][-1]); return 0;}
+                                                                            ^      ~~
+tests/test109.c:3:14: note: array 'arr' declared here
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %f", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test109.c
+
+Test: tests/test11.c
+
+tests/test110.c:3:79: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %lf", arr[1][-1]); return 0;}
+                                                                              ^      ~~
+tests/test110.c:3:14: note: array 'arr' declared here
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %lf", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test110.c
+
+tests/test111.c:3:101: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[1][-1] = %s", arr[1][-1]); return 0;}
+                                                                                                    ^      ~~
+tests/test111.c:3:14: note: array 'arr' declared here
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[1][-1] = %s", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test111.c
+
+tests/test112.c:3:110: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[1][-1] = %d", *arr[1][-1]); return 0;}
+                                                                                                             ^      ~~
+tests/test112.c:3:32: note: array 'arr' declared here
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[1][-1] = %d", *arr[1][-1]); return 0;}
+                               ^
+1 warning generated.
+Test: tests/test112.c
+
+Test: tests/test113.c
+
+Test: tests/test114.c
+
+Test: tests/test115.c
+
+Test: tests/test116.c
+
+Test: tests/test117.c
+
+Test: tests/test118.c
+
+Test: tests/test119.c
+
+Test: tests/test12.c
+
+Test: tests/test120.c
+
+Test: tests/test121.c
+
+Test: tests/test122.c
+
+Test: tests/test123.c
+
+Test: tests/test124.c
+
+Test: tests/test125.c
+
+Test: tests/test126.c
+
+tests/test127.c:3:76: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %d", arr[-1][-1]); return 0;}
+                                                                           ^       ~~
+tests/test127.c:3:14: note: array 'arr' declared here
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %d", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test127.c
+
+tests/test128.c:3:85: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %u", arr[-1][-1]); return 0;}
+                                                                                    ^       ~~
+tests/test128.c:3:14: note: array 'arr' declared here
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %u", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test128.c
+
+tests/test129.c:3:78: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %ld", arr[-1][-1]); return 0;}
+                                                                             ^       ~~
+tests/test129.c:3:14: note: array 'arr' declared here
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %ld", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test129.c
+
+Test: tests/test13.c
+
+tests/test130.c:3:87: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %lu", arr[-1][-1]); return 0;}
+                                                                                      ^       ~~
+tests/test130.c:3:14: note: array 'arr' declared here
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %lu", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test130.c
+
+tests/test131.c:3:79: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %hd", arr[-1][-1]); return 0;}
+                                                                              ^       ~~
+tests/test131.c:3:14: note: array 'arr' declared here
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %hd", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test131.c
+
+tests/test132.c:3:88: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %hu", arr[-1][-1]); return 0;}
+                                                                                       ^       ~~
+tests/test132.c:3:14: note: array 'arr' declared here
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %hu", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test132.c
+
+tests/test133.c:3:84: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %c", arr[-1][-1]); return 0;}
+                                                                                   ^       ~~
+tests/test133.c:3:14: note: array 'arr' declared here
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %c", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test133.c
+
+tests/test134.c:3:77: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %c", arr[-1][-1]); return 0;}
+                                                                            ^       ~~
+tests/test134.c:3:14: note: array 'arr' declared here
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %c", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test134.c
+
+tests/test135.c:3:87: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %c", arr[-1][-1]); return 0;}
+                                                                                      ^       ~~
+tests/test135.c:3:14: note: array 'arr' declared here
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %c", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test135.c
+
+tests/test136.c:3:84: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %lld", arr[-1][-1]); return 0;}
+                                                                                   ^       ~~
+tests/test136.c:3:14: note: array 'arr' declared here
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %lld", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test136.c
+
+tests/test137.c:3:78: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %f", arr[-1][-1]); return 0;}
+                                                                             ^       ~~
+tests/test137.c:3:14: note: array 'arr' declared here
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %f", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test137.c
+
+tests/test138.c:3:80: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %lf", arr[-1][-1]); return 0;}
+                                                                               ^       ~~
+tests/test138.c:3:14: note: array 'arr' declared here
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][-1] = %lf", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test138.c
+
+tests/test139.c:3:102: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[-1][-1] = %s", arr[-1][-1]); return 0;}
+                                                                                                     ^       ~~
+tests/test139.c:3:14: note: array 'arr' declared here
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[-1][-1] = %s", arr[-1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test139.c
+
+Test: tests/test14.c
+
+tests/test140.c:3:111: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[-1][-1] = %d", *arr[-1][-1]); return 0;}
+                                                                                                              ^       ~~
+tests/test140.c:3:32: note: array 'arr' declared here
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[-1][-1] = %d", *arr[-1][-1]); return 0;}
+                               ^
+1 warning generated.
+Test: tests/test140.c
+
+tests/test141.c:3:75: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %d", arr[-1][3]); return 0;}
+                                                                          ^       ~
+tests/test141.c:3:14: note: array 'arr' declared here
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %d", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test141.c
+
+tests/test142.c:3:84: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %u", arr[-1][3]); return 0;}
+                                                                                   ^       ~
+tests/test142.c:3:14: note: array 'arr' declared here
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %u", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test142.c
+
+tests/test143.c:3:77: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %ld", arr[-1][3]); return 0;}
+                                                                            ^       ~
+tests/test143.c:3:14: note: array 'arr' declared here
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %ld", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test143.c
+
+tests/test144.c:3:86: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %lu", arr[-1][3]); return 0;}
+                                                                                     ^       ~
+tests/test144.c:3:14: note: array 'arr' declared here
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %lu", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test144.c
+
+tests/test145.c:3:78: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %hd", arr[-1][3]); return 0;}
+                                                                             ^       ~
+tests/test145.c:3:14: note: array 'arr' declared here
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %hd", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test145.c
+
+tests/test146.c:3:87: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %hu", arr[-1][3]); return 0;}
+                                                                                      ^       ~
+tests/test146.c:3:14: note: array 'arr' declared here
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %hu", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test146.c
+
+tests/test147.c:3:83: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %c", arr[-1][3]); return 0;}
+                                                                                  ^       ~
+tests/test147.c:3:14: note: array 'arr' declared here
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %c", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test147.c
+
+tests/test148.c:3:76: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %c", arr[-1][3]); return 0;}
+                                                                           ^       ~
+tests/test148.c:3:14: note: array 'arr' declared here
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %c", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test148.c
+
+tests/test149.c:3:86: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %c", arr[-1][3]); return 0;}
+                                                                                     ^       ~
+tests/test149.c:3:14: note: array 'arr' declared here
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %c", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test149.c
+
+tests/test15.c:3:56: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { int arr[3]={1,2,3}; printf("arr[3] = %d", arr[3]); return 0;}
+                                                       ^   ~
+tests/test15.c:3:14: note: array 'arr' declared here
+int main() { int arr[3]={1,2,3}; printf("arr[3] = %d", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test15.c
+
+tests/test150.c:3:83: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %lld", arr[-1][3]); return 0;}
+                                                                                  ^       ~
+tests/test150.c:3:14: note: array 'arr' declared here
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %lld", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test150.c
+
+tests/test151.c:3:77: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %f", arr[-1][3]); return 0;}
+                                                                            ^       ~
+tests/test151.c:3:14: note: array 'arr' declared here
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %f", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test151.c
+
+tests/test152.c:3:79: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %lf", arr[-1][3]); return 0;}
+                                                                              ^       ~
+tests/test152.c:3:14: note: array 'arr' declared here
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[-1][3] = %lf", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test152.c
+
+tests/test153.c:3:101: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[-1][3] = %s", arr[-1][3]); return 0;}
+                                                                                                    ^       ~
+tests/test153.c:3:14: note: array 'arr' declared here
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[-1][3] = %s", arr[-1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test153.c
+
+tests/test154.c:3:110: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[-1][3] = %d", *arr[-1][3]); return 0;}
+                                                                                                             ^       ~
+tests/test154.c:3:32: note: array 'arr' declared here
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[-1][3] = %d", *arr[-1][3]); return 0;}
+                               ^
+1 warning generated.
+Test: tests/test154.c
+
+tests/test155.c:3:75: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %d", arr[3][-1]); return 0;}
+                                                                          ^      ~~
+tests/test155.c:3:14: note: array 'arr' declared here
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %d", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test155.c
+
+tests/test156.c:3:84: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %u", arr[3][-1]); return 0;}
+                                                                                   ^      ~~
+tests/test156.c:3:14: note: array 'arr' declared here
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %u", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test156.c
+
+tests/test157.c:3:77: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %ld", arr[3][-1]); return 0;}
+                                                                            ^      ~~
+tests/test157.c:3:14: note: array 'arr' declared here
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %ld", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test157.c
+
+tests/test158.c:3:86: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %lu", arr[3][-1]); return 0;}
+                                                                                     ^      ~~
+tests/test158.c:3:14: note: array 'arr' declared here
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %lu", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test158.c
+
+tests/test159.c:3:78: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %hd", arr[3][-1]); return 0;}
+                                                                             ^      ~~
+tests/test159.c:3:14: note: array 'arr' declared here
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %hd", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test159.c
+
+tests/test16.c:3:65: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned int arr[3]={1,2,3}; printf("arr[3] = %u", arr[3]); return 0;}
+                                                                ^   ~
+tests/test16.c:3:14: note: array 'arr' declared here
+int main() { unsigned int arr[3]={1,2,3}; printf("arr[3] = %u", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test16.c
+
+tests/test160.c:3:87: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %hu", arr[3][-1]); return 0;}
+                                                                                      ^      ~~
+tests/test160.c:3:14: note: array 'arr' declared here
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %hu", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test160.c
+
+tests/test161.c:3:83: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %c", arr[3][-1]); return 0;}
+                                                                                  ^      ~~
+tests/test161.c:3:14: note: array 'arr' declared here
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %c", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test161.c
+
+tests/test162.c:3:76: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %c", arr[3][-1]); return 0;}
+                                                                           ^      ~~
+tests/test162.c:3:14: note: array 'arr' declared here
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %c", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test162.c
+
+tests/test163.c:3:86: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %c", arr[3][-1]); return 0;}
+                                                                                     ^      ~~
+tests/test163.c:3:14: note: array 'arr' declared here
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %c", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test163.c
+
+tests/test164.c:3:83: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %lld", arr[3][-1]); return 0;}
+                                                                                  ^      ~~
+tests/test164.c:3:14: note: array 'arr' declared here
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %lld", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test164.c
+
+tests/test165.c:3:77: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %f", arr[3][-1]); return 0;}
+                                                                            ^      ~~
+tests/test165.c:3:14: note: array 'arr' declared here
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %f", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test165.c
+
+tests/test166.c:3:79: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %lf", arr[3][-1]); return 0;}
+                                                                              ^      ~~
+tests/test166.c:3:14: note: array 'arr' declared here
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][-1] = %lf", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test166.c
+
+tests/test167.c:3:101: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[3][-1] = %s", arr[3][-1]); return 0;}
+                                                                                                    ^      ~~
+tests/test167.c:3:14: note: array 'arr' declared here
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[3][-1] = %s", arr[3][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test167.c
+
+tests/test168.c:3:110: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[3][-1] = %d", *arr[3][-1]); return 0;}
+                                                                                                             ^      ~~
+tests/test168.c:3:32: note: array 'arr' declared here
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[3][-1] = %d", *arr[3][-1]); return 0;}
+                               ^
+1 warning generated.
+Test: tests/test168.c
+
+Test: tests/test169.c
+
+tests/test17.c:3:58: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { long arr[3]={1,2,3}; printf("arr[3] = %ld", arr[3]); return 0;}
+                                                         ^   ~
+tests/test17.c:3:14: note: array 'arr' declared here
+int main() { long arr[3]={1,2,3}; printf("arr[3] = %ld", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test17.c
+
+Test: tests/test170.c
+
+Test: tests/test171.c
+
+Test: tests/test172.c
+
+Test: tests/test173.c
+
+tests/test174.c:15:30: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+    printf("arr[1][3] = %d", arr[1].a[3]);
+                             ^        ~
+tests/test174.c:5:5: note: array 'a' declared here
+    int a[3];
+    ^
+1 warning generated.
+Test: tests/test174.c
+
+tests/test175.c:15:30: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+    printf("arr[3][3] = %d", arr[3].a[3]);
+                             ^        ~
+tests/test175.c:5:5: note: array 'a' declared here
+    int a[3];
+    ^
+1 warning generated.
+Test: tests/test175.c
+
+Test: tests/test176.c
+
+tests/test177.c:15:31: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+    printf("arr[1][-1] = %d", arr[1].a[-1]);
+                              ^        ~~
+tests/test177.c:5:5: note: array 'a' declared here
+    int a[3];
+    ^
+1 warning generated.
+Test: tests/test177.c
+
+tests/test178.c:15:32: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+    printf("arr[-1][-1] = %d", arr[-1].a[-1]);
+                               ^         ~~
+tests/test178.c:5:5: note: array 'a' declared here
+    int a[3];
+    ^
+1 warning generated.
+Test: tests/test178.c
+
+tests/test179.c:15:31: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+    printf("arr[3][-1] = %d", arr[3].a[-1]);
+                              ^        ~~
+tests/test179.c:5:5: note: array 'a' declared here
+    int a[3];
+    ^
+1 warning generated.
+Test: tests/test179.c
+
+tests/test18.c:3:67: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned long arr[3]={1,2,3}; printf("arr[3] = %lu", arr[3]); return 0;}
+                                                                  ^   ~
+tests/test18.c:3:14: note: array 'arr' declared here
+int main() { unsigned long arr[3]={1,2,3}; printf("arr[3] = %lu", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test18.c
+
+tests/test180.c:15:31: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+    printf("arr[-1][3] = %d", arr[-1].a[3]);
+                              ^         ~
+tests/test180.c:5:5: note: array 'a' declared here
+    int a[3];
+    ^
+1 warning generated.
+Test: tests/test180.c
+
+tests/test181.c:6:6: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+    *arr[1] = 30;
+     ^   ~
+tests/test181.c:5:5: note: array 'arr' declared here
+    int *arr[1];
+    ^
+1 warning generated.
+Test: tests/test181.c
+
+tests/test182.c:6:6: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+    *arr[-1] = 30;
+     ^   ~~
+tests/test182.c:5:5: note: array 'arr' declared here
+    int *arr[1];
+    ^
+1 warning generated.
+Test: tests/test182.c
+
+tests/test183.c:6:6: warning: array index 1 is past the end of the array (which contains 1 element) [-Warray-bounds]
+    *arr[0][1] = 30;
+     ^      ~
+tests/test183.c:5:5: note: array 'arr' declared here
+    int *arr[1][1];
+    ^
+1 warning generated.
+Test: tests/test183.c
+
+Test: tests/test184.c
+
+tests/test19.c:3:59: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { short arr[3]={1,2,3}; printf("arr[3] = %hd", arr[3]); return 0;}
+                                                          ^   ~
+tests/test19.c:3:14: note: array 'arr' declared here
+int main() { short arr[3]={1,2,3}; printf("arr[3] = %hd", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test19.c
+
+Test: tests/test2.c
+
+tests/test20.c:3:68: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned short arr[3]={1,2,3}; printf("arr[3] = %hu", arr[3]); return 0;}
+                                                                   ^   ~
+tests/test20.c:3:14: note: array 'arr' declared here
+int main() { unsigned short arr[3]={1,2,3}; printf("arr[3] = %hu", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test20.c
+
+tests/test21.c:3:64: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { signed char arr[3]={1,2,3}; printf("arr[3] = %c", arr[3]); return 0;}
+                                                               ^   ~
+tests/test21.c:3:14: note: array 'arr' declared here
+int main() { signed char arr[3]={1,2,3}; printf("arr[3] = %c", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test21.c
+
+tests/test22.c:3:57: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { char arr[3]={1,2,3}; printf("arr[3] = %c", arr[3]); return 0;}
+                                                        ^   ~
+tests/test22.c:3:14: note: array 'arr' declared here
+int main() { char arr[3]={1,2,3}; printf("arr[3] = %c", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test22.c
+
+tests/test23.c:3:67: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned  char arr[3]={1,2,3}; printf("arr[3] = %c", arr[3]); return 0;}
+                                                                  ^   ~
+tests/test23.c:3:14: note: array 'arr' declared here
+int main() { unsigned  char arr[3]={1,2,3}; printf("arr[3] = %c", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test23.c
+
+tests/test24.c:3:64: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { long long arr[3]={1,2,3}; printf("arr[3] = %lld", arr[3]); return 0;}
+                                                               ^   ~
+tests/test24.c:3:14: note: array 'arr' declared here
+int main() { long long arr[3]={1,2,3}; printf("arr[3] = %lld", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test24.c
+
+tests/test25.c:3:58: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { float arr[3]={1,2,3}; printf("arr[3] = %f", arr[3]); return 0;}
+                                                         ^   ~
+tests/test25.c:3:14: note: array 'arr' declared here
+int main() { float arr[3]={1,2,3}; printf("arr[3] = %f", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test25.c
+
+tests/test26.c:3:60: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { double arr[3]={1,2,3}; printf("arr[3] = %lf", arr[3]); return 0;}
+                                                           ^   ~
+tests/test26.c:3:14: note: array 'arr' declared here
+int main() { double arr[3]={1,2,3}; printf("arr[3] = %lf", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test26.c
+
+tests/test27.c:3:66: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { char* arr[3]={"1", "2", "3"}; printf("arr[3] = %s", arr[3]); return 0;}
+                                                                 ^   ~
+tests/test27.c:3:14: note: array 'arr' declared here
+int main() { char* arr[3]={"1", "2", "3"}; printf("arr[3] = %s", arr[3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test27.c
+
+tests/test28.c:3:81: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { int a=1, b=2, c=3;int* arr[3]={&a, &b, &c}; printf("arr[3] = %d", *arr[3]); return 0;}
+                                                                                ^   ~
+tests/test28.c:3:32: note: array 'arr' declared here
+int main() { int a=1, b=2, c=3;int* arr[3]={&a, &b, &c}; printf("arr[3] = %d", *arr[3]); return 0;}
+                               ^
+1 warning generated.
+Test: tests/test28.c
+
+tests/test29.c:3:57: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { int arr[3]={1,2,3}; printf("arr[-1] = %d", arr[-1]); return 0;}
+                                                        ^   ~~
+tests/test29.c:3:14: note: array 'arr' declared here
+int main() { int arr[3]={1,2,3}; printf("arr[-1] = %d", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test29.c
+
+Test: tests/test3.c
+
+tests/test30.c:3:66: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned int arr[3]={1,2,3}; printf("arr[-1] = %u", arr[-1]); return 0;}
+                                                                 ^   ~~
+tests/test30.c:3:14: note: array 'arr' declared here
+int main() { unsigned int arr[3]={1,2,3}; printf("arr[-1] = %u", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test30.c
+
+tests/test31.c:3:59: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { long arr[3]={1,2,3}; printf("arr[-1] = %ld", arr[-1]); return 0;}
+                                                          ^   ~~
+tests/test31.c:3:14: note: array 'arr' declared here
+int main() { long arr[3]={1,2,3}; printf("arr[-1] = %ld", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test31.c
+
+tests/test32.c:3:68: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned long arr[3]={1,2,3}; printf("arr[-1] = %lu", arr[-1]); return 0;}
+                                                                   ^   ~~
+tests/test32.c:3:14: note: array 'arr' declared here
+int main() { unsigned long arr[3]={1,2,3}; printf("arr[-1] = %lu", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test32.c
+
+tests/test33.c:3:60: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { short arr[3]={1,2,3}; printf("arr[-1] = %hd", arr[-1]); return 0;}
+                                                           ^   ~~
+tests/test33.c:3:14: note: array 'arr' declared here
+int main() { short arr[3]={1,2,3}; printf("arr[-1] = %hd", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test33.c
+
+tests/test34.c:3:69: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned short arr[3]={1,2,3}; printf("arr[-1] = %hu", arr[-1]); return 0;}
+                                                                    ^   ~~
+tests/test34.c:3:14: note: array 'arr' declared here
+int main() { unsigned short arr[3]={1,2,3}; printf("arr[-1] = %hu", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test34.c
+
+tests/test35.c:3:65: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { signed char arr[3]={1,2,3}; printf("arr[-1] = %c", arr[-1]); return 0;}
+                                                                ^   ~~
+tests/test35.c:3:14: note: array 'arr' declared here
+int main() { signed char arr[3]={1,2,3}; printf("arr[-1] = %c", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test35.c
+
+tests/test36.c:3:58: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { char arr[3]={1,2,3}; printf("arr[-1] = %c", arr[-1]); return 0;}
+                                                         ^   ~~
+tests/test36.c:3:14: note: array 'arr' declared here
+int main() { char arr[3]={1,2,3}; printf("arr[-1] = %c", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test36.c
+
+tests/test37.c:3:68: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { unsigned  char arr[3]={1,2,3}; printf("arr[-1] = %c", arr[-1]); return 0;}
+                                                                   ^   ~~
+tests/test37.c:3:14: note: array 'arr' declared here
+int main() { unsigned  char arr[3]={1,2,3}; printf("arr[-1] = %c", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test37.c
+
+tests/test38.c:3:65: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { long long arr[3]={1,2,3}; printf("arr[-1] = %lld", arr[-1]); return 0;}
+                                                                ^   ~~
+tests/test38.c:3:14: note: array 'arr' declared here
+int main() { long long arr[3]={1,2,3}; printf("arr[-1] = %lld", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test38.c
+
+tests/test39.c:3:59: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { float arr[3]={1,2,3}; printf("arr[-1] = %f", arr[-1]); return 0;}
+                                                          ^   ~~
+tests/test39.c:3:14: note: array 'arr' declared here
+int main() { float arr[3]={1,2,3}; printf("arr[-1] = %f", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test39.c
+
+Test: tests/test4.c
+
+tests/test40.c:3:61: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { double arr[3]={1,2,3}; printf("arr[-1] = %lf", arr[-1]); return 0;}
+                                                            ^   ~~
+tests/test40.c:3:14: note: array 'arr' declared here
+int main() { double arr[3]={1,2,3}; printf("arr[-1] = %lf", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test40.c
+
+tests/test41.c:3:67: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { char* arr[3]={"1", "2", "3"}; printf("arr[-1] = %s", arr[-1]); return 0;}
+                                                                  ^   ~~
+tests/test41.c:3:14: note: array 'arr' declared here
+int main() { char* arr[3]={"1", "2", "3"}; printf("arr[-1] = %s", arr[-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test41.c
+
+tests/test42.c:3:82: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { int a=1, b=2, c=3;int* arr[3]={&a, &b, &c}; printf("arr[-1] = %d", *arr[-1]); return 0;}
+                                                                                 ^   ~~
+tests/test42.c:3:32: note: array 'arr' declared here
+int main() { int a=1, b=2, c=3;int* arr[3]={&a, &b, &c}; printf("arr[-1] = %d", *arr[-1]); return 0;}
+                               ^
+1 warning generated.
+Test: tests/test42.c
+
+Test: tests/test43.c
+
+Test: tests/test44.c
+
+Test: tests/test45.c
+
+Test: tests/test46.c
+
+Test: tests/test47.c
+
+Test: tests/test48.c
+
+Test: tests/test49.c
+
+Test: tests/test5.c
+
+Test: tests/test50.c
+
+Test: tests/test51.c
+
+Test: tests/test52.c
+
+Test: tests/test53.c
+
+Test: tests/test54.c
+
+Test: tests/test55.c
+
+Test: tests/test56.c
+
+tests/test57.c:3:74: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %d", arr[1][3]); return 0;}
+                                                                         ^      ~
+tests/test57.c:3:14: note: array 'arr' declared here
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %d", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test57.c
+
+tests/test58.c:3:83: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %u", arr[1][3]); return 0;}
+                                                                                  ^      ~
+tests/test58.c:3:14: note: array 'arr' declared here
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %u", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test58.c
+
+tests/test59.c:3:76: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %ld", arr[1][3]); return 0;}
+                                                                           ^      ~
+tests/test59.c:3:14: note: array 'arr' declared here
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %ld", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test59.c
+
+Test: tests/test6.c
+
+tests/test60.c:3:85: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %lu", arr[1][3]); return 0;}
+                                                                                    ^      ~
+tests/test60.c:3:14: note: array 'arr' declared here
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %lu", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test60.c
+
+tests/test61.c:3:77: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %hd", arr[1][3]); return 0;}
+                                                                            ^      ~
+tests/test61.c:3:14: note: array 'arr' declared here
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %hd", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test61.c
+
+tests/test62.c:3:86: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %hu", arr[1][3]); return 0;}
+                                                                                     ^      ~
+tests/test62.c:3:14: note: array 'arr' declared here
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %hu", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test62.c
+
+tests/test63.c:3:82: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %c", arr[1][3]); return 0;}
+                                                                                 ^      ~
+tests/test63.c:3:14: note: array 'arr' declared here
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %c", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test63.c
+
+tests/test64.c:3:75: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %c", arr[1][3]); return 0;}
+                                                                          ^      ~
+tests/test64.c:3:14: note: array 'arr' declared here
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %c", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test64.c
+
+tests/test65.c:3:85: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %c", arr[1][3]); return 0;}
+                                                                                    ^      ~
+tests/test65.c:3:14: note: array 'arr' declared here
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %c", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test65.c
+
+tests/test66.c:3:82: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %lld", arr[1][3]); return 0;}
+                                                                                 ^      ~
+tests/test66.c:3:14: note: array 'arr' declared here
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %lld", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test66.c
+
+tests/test67.c:3:76: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %f", arr[1][3]); return 0;}
+                                                                           ^      ~
+tests/test67.c:3:14: note: array 'arr' declared here
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %f", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test67.c
+
+tests/test68.c:3:78: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %lf", arr[1][3]); return 0;}
+                                                                             ^      ~
+tests/test68.c:3:14: note: array 'arr' declared here
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][3] = %lf", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test68.c
+
+tests/test69.c:3:100: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[1][3] = %s", arr[1][3]); return 0;}
+                                                                                                   ^      ~
+tests/test69.c:3:14: note: array 'arr' declared here
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[1][3] = %s", arr[1][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test69.c
+
+Test: tests/test7.c
+
+tests/test70.c:3:109: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[1][3] = %d", *arr[1][3]); return 0;}
+                                                                                                            ^      ~
+tests/test70.c:3:32: note: array 'arr' declared here
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[1][3] = %d", *arr[1][3]); return 0;}
+                               ^
+1 warning generated.
+Test: tests/test70.c
+
+Test: tests/test71.c
+
+Test: tests/test72.c
+
+Test: tests/test73.c
+
+Test: tests/test74.c
+
+Test: tests/test75.c
+
+Test: tests/test76.c
+
+Test: tests/test77.c
+
+Test: tests/test78.c
+
+Test: tests/test79.c
+
+Test: tests/test8.c
+
+Test: tests/test80.c
+
+Test: tests/test81.c
+
+Test: tests/test82.c
+
+Test: tests/test83.c
+
+Test: tests/test84.c
+
+tests/test85.c:3:74: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %d", arr[3][3]); return 0;}
+                                                                         ^      ~
+tests/test85.c:3:14: note: array 'arr' declared here
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %d", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test85.c
+
+tests/test86.c:3:83: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %u", arr[3][3]); return 0;}
+                                                                                  ^      ~
+tests/test86.c:3:14: note: array 'arr' declared here
+int main() { unsigned int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %u", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test86.c
+
+tests/test87.c:3:76: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %ld", arr[3][3]); return 0;}
+                                                                           ^      ~
+tests/test87.c:3:14: note: array 'arr' declared here
+int main() { long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %ld", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test87.c
+
+tests/test88.c:3:85: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %lu", arr[3][3]); return 0;}
+                                                                                    ^      ~
+tests/test88.c:3:14: note: array 'arr' declared here
+int main() { unsigned long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %lu", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test88.c
+
+tests/test89.c:3:77: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %hd", arr[3][3]); return 0;}
+                                                                            ^      ~
+tests/test89.c:3:14: note: array 'arr' declared here
+int main() { short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %hd", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test89.c
+
+Test: tests/test9.c
+
+tests/test90.c:3:86: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %hu", arr[3][3]); return 0;}
+                                                                                     ^      ~
+tests/test90.c:3:14: note: array 'arr' declared here
+int main() { unsigned short arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %hu", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test90.c
+
+tests/test91.c:3:82: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %c", arr[3][3]); return 0;}
+                                                                                 ^      ~
+tests/test91.c:3:14: note: array 'arr' declared here
+int main() { signed char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %c", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test91.c
+
+tests/test92.c:3:75: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %c", arr[3][3]); return 0;}
+                                                                          ^      ~
+tests/test92.c:3:14: note: array 'arr' declared here
+int main() { char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %c", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test92.c
+
+tests/test93.c:3:85: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %c", arr[3][3]); return 0;}
+                                                                                    ^      ~
+tests/test93.c:3:14: note: array 'arr' declared here
+int main() { unsigned  char arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %c", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test93.c
+
+tests/test94.c:3:82: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %lld", arr[3][3]); return 0;}
+                                                                                 ^      ~
+tests/test94.c:3:14: note: array 'arr' declared here
+int main() { long long arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %lld", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test94.c
+
+tests/test95.c:3:76: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %f", arr[3][3]); return 0;}
+                                                                           ^      ~
+tests/test95.c:3:14: note: array 'arr' declared here
+int main() { float arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %f", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test95.c
+
+tests/test96.c:3:78: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %lf", arr[3][3]); return 0;}
+                                                                             ^      ~
+tests/test96.c:3:14: note: array 'arr' declared here
+int main() { double arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[3][3] = %lf", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test96.c
+
+tests/test97.c:3:100: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[3][3] = %s", arr[3][3]); return 0;}
+                                                                                                   ^      ~
+tests/test97.c:3:14: note: array 'arr' declared here
+int main() { char* arr[3][3]={"1", "2", "3","1", "2", "3","1", "2", "3"}; printf("arr[3][3] = %s", arr[3][3]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test97.c
+
+tests/test98.c:3:109: warning: array index 3 is past the end of the array (which contains 3 elements) [-Warray-bounds]
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[3][3] = %d", *arr[3][3]); return 0;}
+                                                                                                            ^      ~
+tests/test98.c:3:32: note: array 'arr' declared here
+int main() { int a=1, b=2, c=3;int* arr[3][3]={&a, &b, &c,&a, &b, &c,&a, &b, &c}; printf("arr[3][3] = %d", *arr[3][3]); return 0;}
+                               ^
+1 warning generated.
+Test: tests/test98.c
+
+tests/test99.c:3:75: warning: array index -1 is before the beginning of the array [-Warray-bounds]
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %d", arr[1][-1]); return 0;}
+                                                                          ^      ~~
+tests/test99.c:3:14: note: array 'arr' declared here
+int main() { int arr[3][3]={1,2,3,1,2,3,1,2,3}; printf("arr[1][-1] = %d", arr[1][-1]); return 0;}
+             ^
+1 warning generated.
+Test: tests/test99.c
+
+Done Instrumenting Code-------------------------------------
+
+Running Tests-------------------------------------------------
+arr[1] = 2arr[1] = 2tests/test100.c:3: Array Out of Bounds Error
+tests/test101.c:3: Array Out of Bounds Error
+tests/test102.c:3: Array Out of Bounds Error
+tests/test103.c:3: Array Out of Bounds Error
+tests/test104.c:3: Array Out of Bounds Error
+tests/test105.c:3: Array Out of Bounds Error
+tests/test106.c:3: Array Out of Bounds Error
+tests/test107.c:3: Array Out of Bounds Error
+tests/test108.c:3: Array Out of Bounds Error
+tests/test109.c:3: Array Out of Bounds Error
+arr[1] = 2.000000tests/test110.c:3: Array Out of Bounds Error
+tests/test111.c:3: Array Out of Bounds Error
+tests/test112.c:3: Array Out of Bounds Error
+tests/test113.c:3: Array Out of Bounds Error
+tests/test114.c:3: Array Out of Bounds Error
+tests/test115.c:3: Array Out of Bounds Error
+tests/test116.c:3: Array Out of Bounds Error
+tests/test117.c:3: Array Out of Bounds Error
+tests/test118.c:3: Array Out of Bounds Error
+tests/test119.c:3: Array Out of Bounds Error
+arr[1] = 2.000000tests/test120.c:3: Array Out of Bounds Error
+tests/test121.c:3: Array Out of Bounds Error
+tests/test122.c:3: Array Out of Bounds Error
+tests/test123.c:3: Array Out of Bounds Error
+tests/test124.c:3: Array Out of Bounds Error
+tests/test125.c:3: Array Out of Bounds Error
+tests/test126.c:3: Array Out of Bounds Error
+tests/test127.c:3: Array Out of Bounds Error
+tests/test128.c:3: Array Out of Bounds Error
+tests/test129.c:3: Array Out of Bounds Error
+arr[1] = 2tests/test130.c:3: Array Out of Bounds Error
+tests/test131.c:3: Array Out of Bounds Error
+tests/test132.c:3: Array Out of Bounds Error
+tests/test133.c:3: Array Out of Bounds Error
+tests/test134.c:3: Array Out of Bounds Error
+tests/test135.c:3: Array Out of Bounds Error
+tests/test136.c:3: Array Out of Bounds Error
+tests/test137.c:3: Array Out of Bounds Error
+tests/test138.c:3: Array Out of Bounds Error
+tests/test139.c:3: Array Out of Bounds Error
+arr[1] = 2tests/test140.c:3: Array Out of Bounds Error
+tests/test141.c:3: Array Out of Bounds Error
+tests/test142.c:3: Array Out of Bounds Error
+tests/test143.c:3: Array Out of Bounds Error
+tests/test144.c:3: Array Out of Bounds Error
+tests/test145.c:3: Array Out of Bounds Error
+tests/test146.c:3: Array Out of Bounds Error
+tests/test147.c:3: Array Out of Bounds Error
+tests/test148.c:3: Array Out of Bounds Error
+tests/test149.c:3: Array Out of Bounds Error
+tests/test15.c:3: Array Out of Bounds Error
+tests/test150.c:3: Array Out of Bounds Error
+tests/test151.c:3: Array Out of Bounds Error
+tests/test152.c:3: Array Out of Bounds Error
+tests/test153.c:3: Array Out of Bounds Error
+tests/test154.c:3: Array Out of Bounds Error
+tests/test155.c:3: Array Out of Bounds Error
+tests/test156.c:3: Array Out of Bounds Error
+tests/test157.c:3: Array Out of Bounds Error
+tests/test158.c:3: Array Out of Bounds Error
+tests/test159.c:3: Array Out of Bounds Error
+tests/test16.c:3: Array Out of Bounds Error
+tests/test160.c:3: Array Out of Bounds Error
+tests/test161.c:3: Array Out of Bounds Error
+tests/test162.c:3: Array Out of Bounds Error
+tests/test163.c:3: Array Out of Bounds Error
+tests/test164.c:3: Array Out of Bounds Error
+tests/test165.c:3: Array Out of Bounds Error
+tests/test166.c:3: Array Out of Bounds Error
+tests/test167.c:3: Array Out of Bounds Error
+tests/test168.c:3: Array Out of Bounds Error
+arr[1] = 2tests/test17.c:3: Array Out of Bounds Error
+tests/test170.c:13: Array Out of Bounds Error
+tests/test171.c:13: Array Out of Bounds Error
+arr[1][1] = 2tests/test173.c:15: Array Out of Bounds Error
+tests/test174.c:15: Array Out of Bounds Error
+tests/test175.c:15: Array Out of Bounds Error
+tests/test176.c:15: Array Out of Bounds Error
+tests/test177.c:15: Array Out of Bounds Error
+tests/test178.c:15: Array Out of Bounds Error
+tests/test179.c:15: Array Out of Bounds Error
+tests/test18.c:3: Array Out of Bounds Error
+tests/test180.c:15: Array Out of Bounds Error
+tests/test181.c:6: Array Out of Bounds Error
+tests/test182.c:6: Array Out of Bounds Error
+tests/test183.c:6: Array Out of Bounds Error
+tests/test184.c:6: Array Out of Bounds Error
+tests/test19.c:3: Array Out of Bounds Error
+arr[1] = 2tests/test20.c:3: Array Out of Bounds Error
+tests/test21.c:3: Array Out of Bounds Error
+tests/test22.c:3: Array Out of Bounds Error
+tests/test23.c:3: Array Out of Bounds Error
+tests/test24.c:3: Array Out of Bounds Error
+tests/test25.c:3: Array Out of Bounds Error
+tests/test26.c:3: Array Out of Bounds Error
+tests/test27.c:3: Array Out of Bounds Error
+tests/test28.c:3: Array Out of Bounds Error
+tests/test29.c:3: Array Out of Bounds Error
+arr[1] = 2tests/test30.c:3: Array Out of Bounds Error
+tests/test31.c:3: Array Out of Bounds Error
+tests/test32.c:3: Array Out of Bounds Error
+tests/test33.c:3: Array Out of Bounds Error
+tests/test34.c:3: Array Out of Bounds Error
+tests/test35.c:3: Array Out of Bounds Error
+tests/test36.c:3: Array Out of Bounds Error
+tests/test37.c:3: Array Out of Bounds Error
+tests/test38.c:3: Array Out of Bounds Error
+tests/test39.c:3: Array Out of Bounds Error
+arr[1] = 2tests/test40.c:3: Array Out of Bounds Error
+tests/test41.c:3: Array Out of Bounds Error
+tests/test42.c:3: Array Out of Bounds Error
+arr[1][1] = 2arr[1][1] = 2arr[1][1] = 2arr[1][1] = 2arr[1][1] = 2arr[1][1] = 2arr[1][1] = arr[1] = 2arr[1][1] = arr[1][1] = arr[1][1] = 2arr[1][1] = 2.000000arr[1][1] = 2.000000arr[1][1] = 2arr[1][1] = 2tests/test57.c:3: Array Out of Bounds Error
+tests/test58.c:3: Array Out of Bounds Error
+tests/test59.c:3: Array Out of Bounds Error
+arr[1] = 2tests/test60.c:3: Array Out of Bounds Error
+tests/test61.c:3: Array Out of Bounds Error
+tests/test62.c:3: Array Out of Bounds Error
+tests/test63.c:3: Array Out of Bounds Error
+tests/test64.c:3: Array Out of Bounds Error
+tests/test65.c:3: Array Out of Bounds Error
+tests/test66.c:3: Array Out of Bounds Error
+tests/test67.c:3: Array Out of Bounds Error
+tests/test68.c:3: Array Out of Bounds Error
+tests/test69.c:3: Array Out of Bounds Error
+arr[1] = tests/test70.c:3: Array Out of Bounds Error
+tests/test71.c:3: Array Out of Bounds Error
+tests/test72.c:3: Array Out of Bounds Error
+tests/test73.c:3: Array Out of Bounds Error
+tests/test74.c:3: Array Out of Bounds Error
+tests/test75.c:3: Array Out of Bounds Error
+tests/test76.c:3: Array Out of Bounds Error
+tests/test77.c:3: Array Out of Bounds Error
+tests/test78.c:3: Array Out of Bounds Error
+tests/test79.c:3: Array Out of Bounds Error
+arr[1] = tests/test80.c:3: Array Out of Bounds Error
+tests/test81.c:3: Array Out of Bounds Error
+tests/test82.c:3: Array Out of Bounds Error
+tests/test83.c:3: Array Out of Bounds Error
+tests/test84.c:3: Array Out of Bounds Error
+tests/test85.c:3: Array Out of Bounds Error
+tests/test86.c:3: Array Out of Bounds Error
+tests/test87.c:3: Array Out of Bounds Error
+tests/test88.c:3: Array Out of Bounds Error
+tests/test89.c:3: Array Out of Bounds Error
+arr[1] = tests/test90.c:3: Array Out of Bounds Error
+tests/test91.c:3: Array Out of Bounds Error
+tests/test92.c:3: Array Out of Bounds Error
+tests/test93.c:3: Array Out of Bounds Error
+tests/test94.c:3: Array Out of Bounds Error
+tests/test95.c:3: Array Out of Bounds Error
+tests/test96.c:3: Array Out of Bounds Error
+tests/test97.c:3: Array Out of Bounds Error
+tests/test98.c:3: Array Out of Bounds Error
+tests/test99.c:3: Array Out of Bounds Error
+Done Running Tests--------------------------------------------
